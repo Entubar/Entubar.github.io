@@ -1,179 +1,175 @@
 .wrapper {
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
 }
+
+/* ------- Header Section -------*/
+
 header {
   display: flex;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-  height: 170px;
-  padding-right: 2.2rem;
+  margin-top: 4rem;
 }
 .headerone {
-  flex-basis: 30%;
   flex-wrap: wrap;
+  flex-basis: 40%;
+  padding-left: 1.5rem;
 }
 .headerone h1 {
   color: rgb(78, 6, 78);
-  font-weight: 900;
-  font-size: 2.2rem;
-  margin-top: 0;
-  padding-right: 2rem;
+  font-size: 2.5rem;
 }
 .headerone p {
   color: rgb(167, 148, 167);
-  margin-top: -1.2rem;
+  margin-top: -1rem;
 }
 .headertwo {
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  flex-basis: 70%;
-  text-align: right;
-  flex-wrap: wrap;
+  flex-basis: 60%;
+  justify-content: space-evenly;
+  flex-flow: column wrap;
+  text-align: center;
+  align-content: flex-end;
+  padding-right: 1.5rem;
+}
+.starone,
+.startwo,
+.starthree {
+  color: orange;
+  border-radius: 6px;
+  background-color: rgb(243, 236, 243);
+  padding: 0.8rem;
 }
 .starone {
   margin-right: 4rem;
-  padding: 1rem;
-  color: orange;
-  margin-left: 14rem;
-  border-radius: 10px;
-  background-color: rgb(243, 236, 243);
+  position: relative;
+  right: 2rem;
+  margin-left: -1rem;
 }
 .startwo {
   margin-right: 2rem;
-  padding: 1rem;
-  color: orange;
-  margin-left: 17rem;
-  border-radius: 10px;
-  background-color: rgb(243, 236, 243);
+  position: relative;
+  right: 0.5rem;
 }
 .starthree {
-  padding: 1rem;
-  color: orange;
-  margin-left: 21rem;
-  border-radius: 10px;
-  background-color: rgb(243, 236, 243);
+  margin-left: 2rem;
 }
-.wordone {
-  color: purple;
-  font-weight: bold;
-  margin-right: 4rem;
-}
-.wordtwo {
-  color: purple;
-  font-weight: bold;
-}
+.wordone,
+.wordtwo,
 .wordthree {
   color: purple;
   font-weight: bold;
+  padding-left: 1rem;
 }
+
+/* ------- Main Section ------- */
+
 main {
   display: flex;
-  flex-flow: row nowrap;
-  border: 2px solid green;
+  justify-content: space-around;
 }
-.one {
-  width: 85%;
-  margin: 2rem 2rem 2rem 0;
+.personone,
+.persontwo,
+.personthree {
+  width: 30%;
   background-color: rgb(71, 7, 71);
+  height: 200px;
   border-radius: 8px;
-  height: 230px;
 }
-.two {
-  width: 85%;
-  margin: 2rem;
+.personone {
+  margin-top: 2rem;
+}
+.persontwo {
   margin-top: 3rem;
-  background-color: rgb(71, 7, 71);
-  border-radius: 8px;
-  height: 230px;
 }
-.three {
-  width: 85%;
-  margin: 2rem;
+.personthree {
   margin-top: 4rem;
-  background-color: rgb(71, 7, 71);
-  border-radius: 8px;
-  height: 230px;
 }
-.one h3 {
+
+.personone h3,
+.persontwo h3,
+.personthree h3 {
   display: inline-block;
   position: relative;
-  bottom: 5rem;
+  bottom: 2.5rem;
   font-size: 1rem;
   color: white;
+  text-align: center;
 }
-.two h3 {
+.personone h4,
+.persontwo h4,
+.personthree h4 {
   display: inline-block;
   position: relative;
-  bottom: 5rem;
-  font-size: 1rem;
-  color: white;
-}
-.three h3 {
-  display: inline-block;
-  position: relative;
-  bottom: 5rem;
-  font-size: 1rem;
-  color: white;
-}
-.one h4 {
-  text-align: right;
-  margin-right: 1rem;
-  position: relative;
-  bottom: 7rem;
   right: 6rem;
+  bottom: 1rem;
   font-size: 15px;
   font-weight: normal;
   color: rgb(197, 17, 122);
 }
-.two h4 {
-  text-align: right;
-  margin-right: 1rem;
-  position: relative;
-  bottom: 7rem;
-  right: 6rem;
-  font-size: 15px;
-  font-weight: normal;
-  color: rgb(197, 17, 122);
-}
-.three h4 {
-  text-align: right;
-  margin-right: 1rem;
-  position: relative;
-  bottom: 7rem;
-  right: 6rem;
-  font-size: 15px;
-  font-weight: normal;
-  color: rgb(197, 17, 122);
-}
-.one p {
-  position: relative;
-  bottom: 5rem;
+
+.personone p,
+.persontwo p,
+.personthree p {
+  display: inline-block;
   color: white;
   margin: 0 1.2rem;
 }
-.two p {
-  position: relative;
-  bottom: 5rem;
-  color: white;
-  margin: 0 1.2rem;
-}
-.three p {
-  position: relative;
-  bottom: 5rem;
-  color: white;
-  margin: 0 1.2rem;
-}
-.one img {
+
+.personone img,
+.persontwo img,
+.personthree img {
   margin: 1.5rem;
   border-radius: 50%;
+  width: 30px;
 }
-.two img {
-  margin: 1.5rem;
-  border-radius: 50%;
-}
-.three img {
-  margin: 1.5rem;
-  border-radius: 50%;
+
+/* ------- Media Screen ------- */
+
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin: 0;
+  }
+  .headerone h1 {
+    font-size: 2rem;
+  }
+  .headerone p {
+    font-size: 0.8rem;
+  }
+  .headertwo {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .starone,
+  .startwo,
+  .starthree {
+    margin: 0.5rem 0;
+    position: static;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .wordone,
+  .wordtwo,
+  .wordthree {
+    display: block;
+    font-size: 14px;
+  }
+  main {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .personone,
+  .persontwo,
+  .personthree {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  .personone h4,
+  .persontwo h4,
+  .personthree h4 {
+  }
 }
