@@ -1,6 +1,7 @@
 .wrapper {
   width: 80%;
   margin: 0 auto;
+  font-family: "Spartan", sans-serif;
 }
 
 /* ------- Header Section -------*/
@@ -15,12 +16,16 @@ header {
   padding-left: 1.5rem;
 }
 .headerone h1 {
-  color: rgb(78, 6, 78);
+  color: hsl(300, 43%, 22%);
   font-size: 2.5rem;
+  line-height: 2.4rem;
+  word-wrap: break-word;
 }
 .headerone p {
-  color: rgb(167, 148, 167);
+  color: hsl(303, 10%, 53%);
   margin-top: -1rem;
+  font-size: 12px;
+  line-height: 1.3rem;
 }
 .headertwo {
   display: flex;
@@ -36,7 +41,7 @@ header {
 .starthree {
   color: orange;
   border-radius: 6px;
-  background-color: rgb(243, 236, 243);
+  background-color: hsl(300, 24%, 96%);
   padding: 0.8rem;
 }
 .starone {
@@ -56,9 +61,10 @@ header {
 .wordone,
 .wordtwo,
 .wordthree {
-  color: purple;
   font-weight: bold;
   padding-left: 1rem;
+  font-size: 12px;
+  color: hsl(300, 43%, 22%);
 }
 
 /* ------- Main Section ------- */
@@ -71,9 +77,11 @@ main {
 .persontwo,
 .personthree {
   width: 30%;
-  background-color: rgb(71, 7, 71);
+  background-color: hsl(300, 43%, 22%);
   height: 200px;
   border-radius: 8px;
+  display: flex;
+  flex-flow: row wrap;
 }
 .personone {
   margin-top: 2rem;
@@ -81,6 +89,7 @@ main {
 .persontwo {
   margin-top: 3rem;
 }
+
 .personthree {
   margin-top: 4rem;
 }
@@ -88,36 +97,35 @@ main {
 .personone h3,
 .persontwo h3,
 .personthree h3 {
-  display: inline-block;
-  position: relative;
-  bottom: 2.5rem;
-  font-size: 1rem;
-  color: white;
-  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.2rem;
+  font-size: 12px;
+  color: hsl(300, 24%, 96%);
 }
 .personone h4,
 .persontwo h4,
 .personthree h4 {
-  display: inline-block;
-  position: relative;
-  right: 6rem;
-  bottom: 1rem;
-  font-size: 15px;
+  margin-top: -1rem;
+  font-size: 12px;
   font-weight: normal;
-  color: rgb(197, 17, 122);
+  color: hsl(333, 80%, 67%);
 }
 
 .personone p,
 .persontwo p,
 .personthree p {
+  line-height: 1.3rem;
+  font-size: 12px;
   display: inline-block;
-  color: white;
+  color: hsl(300, 24%, 96%);
   margin: 0 1.2rem;
+  margin-top: -2rem;
 }
 
 .personone img,
 .persontwo img,
 .personthree img {
+  height: 20%;
   margin: 1.5rem;
   border-radius: 50%;
   width: 30px;
@@ -126,17 +134,31 @@ main {
 /* ------- Media Screen ------- */
 
 @media screen and (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+  }
   header {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+  }
+  .headerone {
+    display: flex;
+    justify-content: center;
     margin: 0;
+    padding: 0;
   }
   .headerone h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: normal;
+    margin-bottom: 2rem;
+    text-align: center;
   }
   .headerone p {
     font-size: 0.8rem;
+    width: 100%;
+    text-align: center;
   }
   .headertwo {
     display: flex;
@@ -150,13 +172,13 @@ main {
     margin: 0.5rem 0;
     position: static;
     flex-wrap: wrap;
-    width: 100%;
+    width: 90%;
   }
   .wordone,
   .wordtwo,
   .wordthree {
     display: block;
-    font-size: 14px;
+    font-size: 12px;
   }
   main {
     display: flex;
@@ -167,9 +189,5 @@ main {
   .personthree {
     width: 100%;
     margin: 0.5rem 0;
-  }
-  .personone h4,
-  .persontwo h4,
-  .personthree h4 {
   }
 }
