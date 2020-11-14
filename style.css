@@ -58,9 +58,7 @@ header {
 .starthree {
   margin-left: 2rem;
 }
-.wordone,
-.wordtwo,
-.wordthree {
+.rated {
   font-weight: bold;
   padding-left: 1rem;
   font-size: 12px;
@@ -73,9 +71,9 @@ main {
   display: flex;
   justify-content: space-around;
 }
-.personone,
-.persontwo,
-.personthree {
+.person-one,
+.person-two,
+.person-three {
   width: 30%;
   background-color: hsl(300, 43%, 22%);
   height: 200px;
@@ -83,37 +81,37 @@ main {
   display: flex;
   flex-flow: row wrap;
 }
-.personone {
+.person-one {
   margin-top: 2rem;
 }
-.persontwo {
+.person-two {
   margin-top: 3rem;
 }
 
-.personthree {
+.person-three {
   margin-top: 4rem;
 }
 
-.personone h3,
-.persontwo h3,
-.personthree h3 {
+.person-one h3,
+.person-two h3,
+.person-three h3 {
   margin-top: 1.5rem;
   margin-bottom: 1.2rem;
   font-size: 12px;
   color: hsl(300, 24%, 96%);
 }
-.personone h4,
-.persontwo h4,
-.personthree h4 {
+.person-one h4,
+.person-two h4,
+.person-three h4 {
   margin-top: -1rem;
   font-size: 12px;
   font-weight: normal;
   color: hsl(333, 80%, 67%);
 }
 
-.personone p,
-.persontwo p,
-.personthree p {
+.person-one p,
+.person-two p,
+.person-three p {
   line-height: 1.3rem;
   font-size: 12px;
   display: inline-block;
@@ -122,9 +120,9 @@ main {
   margin-top: -2rem;
 }
 
-.personone img,
-.persontwo img,
-.personthree img {
+.person-one img,
+.person-two img,
+.person-three img {
   height: 20%;
   margin: 1.5rem;
   border-radius: 50%;
@@ -141,6 +139,7 @@ main {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    width: 100%;
   }
   .headerone {
     display: flex;
@@ -162,7 +161,6 @@ main {
   }
   .headertwo {
     display: flex;
-    justify-content: center;
     margin: 0;
     padding: 0;
   }
@@ -174,9 +172,8 @@ main {
     flex-wrap: wrap;
     width: 90%;
   }
-  .wordone,
-  .wordtwo,
-  .wordthree {
+
+  .rated {
     display: block;
     font-size: 12px;
   }
@@ -184,9 +181,9 @@ main {
     display: flex;
     flex-flow: column wrap;
   }
-  .personone,
-  .persontwo,
-  .personthree {
+  .person-one,
+  .person-two,
+  .person-three {
     width: 100%;
     margin: 0.5rem 0;
   }
